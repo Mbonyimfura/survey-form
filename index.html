@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"></link>
+  <title>Survey Form</title>
+ </head>
+ <body>
+   <h1 id="title"> Tresor Survey Form</h1>
+   <p id="description">Thank you for filling out this form.</p>
+   <form id="survey-form">
+     <label for="name" id="name-label">Name:
+       <input type="text" id="name" name="name" required placeholder="Enter your name">
+     </label>
+      <label for="email" id="email-label">Email:
+       <input type="email" id="email" name="email" required placeholder="Enter your email">
+     </label>
+      <label for="age" id="number-label">Age:
+       <input type="number" id="number" name="number" min="14" max="100" placeholder="Enter age">
+     </label>
+    <label>.Which social media do you use the most?
+       <select id="dropdown">
+        <option value="">Select one</option>
+       <option value="1" >Twitter</option>
+       <option value="2">Instagram</option>
+       <option value="3">Facebook</option>
+       <option value="4">Linkedin</option>
+     </select>
+    </label>
+    <legend>
+      How many times do you visit social media per day?
+      </legend>
+     <label>
+       <input type="radio" name="name" value="value"checked class="inline"> Once
+     </label>
+      <label>
+       <input type="radio" name="name" value="value" class="inline"> More than once 
+     </label>
+    </legend>
+    <legend>Select all the scripting languages you know (Choose all that apply)</legend>
+    <label>
+      <input type="checkbox" value="JavaScript" name="JavaScript" class="inline"> JavaScript
+    </label>
+     <label>
+      <input type="checkbox" value="Perl" name="Perl" class="inline" > Perl
+    </label>
+      <label>
+      <input type="checkbox" value="PHP" name="PHP" class="inline"> PHP
+    </label>
+     <label>
+      <input type="checkbox" value="Ruby" name="Ruby" class="inline"> Ruby
+    </label>
+    <label for='comments'>Additional Comments
+      <textarea rows="2" cols="20" placeholder="Any comments..."></textarea>
+    </label>
+       <button id="submit">Submit</button>
+   </form>
+ </body>
+</html>
